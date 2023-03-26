@@ -1,16 +1,19 @@
 import { StatusBar } from 'expo-status-bar';
 // import { StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView, Text, View } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import HomeScreen from './src/screens/HomeScreen.js';
+import MainNavigator from './src/navigations/MainNavigator.js';
 
-export default function App() {
-  return (
-    // <View style={styles.container}>
-    <SafeAreaView className="flex-1 items-center justify-center bg-white">
-      <Text className="text-red-600">OH HEY THERE JASON!!! Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </SafeAreaView>
-  );
-}
+// const Stack = createNativeStackNavigator();
+
+
+const App = () => {
+  return <MainNavigator />;
+};
+
+export default App;
 
 // const styles = StyleSheet.create({
 //   container: {
