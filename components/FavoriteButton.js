@@ -1,6 +1,6 @@
 import React from "react";
 import { View } from "react-native";
-import { colors } from "../src/constants/theme";
+import { colors, shadow } from "../src/constants/theme";
 import Icon from "../src/components/icon";
 
 const FavoriteButton = ({active, style}) => {
@@ -10,9 +10,10 @@ const FavoriteButton = ({active, style}) => {
             padding: 4,
             borderRadius: 20,
         },
+        shadow.light,
         style,
         ]}>
-            <Icon icon="Favorite" size={24}/>
+            <Icon icon={active ? 'FavoriteFilled' : "Favorite"} size={24}/>
         </View>
     )
 }

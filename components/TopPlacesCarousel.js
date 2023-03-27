@@ -21,7 +21,7 @@ const TopPlacesCarousel = ({list}) => {
         return (
         <TouchableOpacity style={{marginLeft: spacing.l, marginRight: index === list.length -1 ? spacing.l: 0}}>
             <View style={[styles.card, shadow.dark]}>
-                <FavoriteButton style={styles.favorite}/>
+                <FavoriteButton style={styles.favorite} />
                 <View style={styles.imageBox}>
                 <Image source={item.image} style={styles.image} />
                 </View>

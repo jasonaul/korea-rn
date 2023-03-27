@@ -287,6 +287,77 @@ const USERS = {
       type: 'PLACE',
     },
   ];
+
+  export const TOP_ATTRACTIONS = [
+    {
+      id: 100,
+      image: require('../../assets/images/attractions/hongdae_souel_1.jpeg'),
+      title: 'Hongdae Neighborhood',
+      location: 'Seoul',
+      description:
+        "Cappadocia's landscape inc ludes dramatic expanses of soft volcanic rock, shaped by erosion into towers, cones, valleys, and caves. Rock-cut churches and underground tunnel complexes from the Byzantine and Islamic eras are scattered throughout the countryside.",
+      rating: 9.2,
+      gallery: [
+        require('../../assets/images/trips/4c73f37e70dded978374960fb29360f2.jpeg'),
+        require('../../assets/images/trips/55608c7000bb15d24ee022f3d3f0bf8a.jpeg'),
+        require('../../assets/images/trips/c68a4484f89d0c087ebdaa43629d2a7a.jpeg'),
+      ],
+      reviews: [REVIEWS[1], REVIEWS[2]],
+      hotels: [HOTELS[1], HOTELS[2]],
+      type: 'ATTRACTION',
+    },
+    {
+        id: 101,
+        image: require('../../assets/images/attractions/camillaHill_jeju_1.jpeg'),
+        title: 'Camellia Hill',
+        location: 'Jeju',
+        description:
+          "Cappadocia's landscape includes dramatic expanses of soft volcanic rock, shaped by erosion into towers, cones, valleys, and caves. Rock-cut churches and underground tunnel complexes from the Byzantine and Islamic eras are scattered throughout the countryside.",
+        rating: 9.2,
+        gallery: [
+          require('../../assets/images/trips/4c73f37e70dded978374960fb29360f2.jpeg'),
+          require('../../assets/images/trips/55608c7000bb15d24ee022f3d3f0bf8a.jpeg'),
+          require('../../assets/images/trips/c68a4484f89d0c087ebdaa43629d2a7a.jpeg'),
+        ],
+        reviews: [REVIEWS[1], REVIEWS[2]],
+        hotels: [HOTELS[1], HOTELS[2]],
+        type: 'ATTRACTION',
+      },
+      {
+        id: 102,
+        image: require('../../assets/images/attractions/Haedong_busan1.jpeg'),
+        title: 'Haedong Temple',
+        location: 'Busan',
+        description:
+          "Cappadocia's landscape includes dramatic expanses of soft volcanic rock, shaped by erosion into towers, cones, valleys, and caves. Rock-cut churches and underground tunnel complexes from the Byzantine and Islamic eras are scattered throughout the countryside.",
+        rating: 9.2,
+        gallery: [
+          require('../../assets/images/trips/4c73f37e70dded978374960fb29360f2.jpeg'),
+          require('../../assets/images/trips/55608c7000bb15d24ee022f3d3f0bf8a.jpeg'),
+          require('../../assets/images/trips/c68a4484f89d0c087ebdaa43629d2a7a.jpeg'),
+        ],
+        reviews: [REVIEWS[1], REVIEWS[2]],
+        hotels: [HOTELS[1], HOTELS[2]],
+        type: 'ATTRACTION',
+      },
+      {
+        id: 103,
+        image: require('../../assets/images/attractions/Bulguksa_temple_gyeugo.jpeg'),
+        title: 'Bulguksa Temple',
+        location: 'Gyeongju',
+        description:
+          "Cappadocia's landscape includes dramatic expanses of soft volcanic rock, shaped by erosion into towers, cones, valleys, and caves. Rock-cut churches and underground tunnel complexes from the Byzantine and Islamic eras are scattered throughout the countryside.",
+        rating: 9.2,
+        gallery: [
+          require('../../assets/images/trips/4c73f37e70dded978374960fb29360f2.jpeg'),
+          require('../../assets/images/trips/55608c7000bb15d24ee022f3d3f0bf8a.jpeg'),
+          require('../../assets/images/trips/c68a4484f89d0c087ebdaa43629d2a7a.jpeg'),
+        ],
+        reviews: [REVIEWS[1], REVIEWS[2]],
+        hotels: [HOTELS[1], HOTELS[2]],
+        type: 'ATTRACTION',
+      },
+  ];
   
   export const SEARCH_PLACES = [...PLACES, ...TOP_PLACES].map(item => ({
     ...item,
