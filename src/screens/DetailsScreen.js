@@ -5,6 +5,8 @@ import { colors, sizes, spacing } from "../constants/theme";
 import { useSafeAreaInsets } from "react-native-safe-area-context"
 import { useNavigation } from "@react-navigation/native";
 import { SharedElement } from "react-navigation-shared-element"
+import DetailsCard from "../../components/DetailsCard";
+import * as Animatable from 'react-native-animatable';
 
 
 const DetailsScreen = ({navigation, route}) => {
@@ -12,12 +14,19 @@ const DetailsScreen = ({navigation, route}) => {
     const {trip} = route.params;
     return (
         <View style={styles.container}>
-            <View style={[styles.backButton, {marginTop: insets.top}]}>
+            <Animatable.View 
+            style={[styles.backButton, 
+            {marginTop: insets.top}]}
+            animation="fadeIn"
+            delay={500}
+            duration={400}
+            easing="ease-in-out"
+            >
                 <Icon icon="ArrowLeft" 
                     style={styles.backIcon} 
                     onPress={navigation.goBack}
                 />
-            </View>
+            </Animatable.View>
 
         <SharedElement 
             id={`trip.${trip.id}.image`} 
@@ -30,6 +39,7 @@ const DetailsScreen = ({navigation, route}) => {
                 
             </View>
             </SharedElement>
+            <DetailsCard trip={trip}/>
         </View>
         
     )

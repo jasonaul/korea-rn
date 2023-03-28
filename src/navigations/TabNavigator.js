@@ -10,11 +10,12 @@ import ThingsToDoScreen from "../screens/ThingsToDoScreen";
 import Icon from "../components/icon";
 import { colors, sizes } from "../constants/theme";
 import { Animated, StyleSheet } from "react-native";
+import HomeNavigator from "./HomeNavigator";
 
 const tabs = [
     {
         name: 'Home',
-        screen: HomeScreen,
+        screen: HomeNavigator,
     },
     {
         name: 'Itinerary',
