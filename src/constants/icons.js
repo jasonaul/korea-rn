@@ -5,6 +5,7 @@ const Things = require('../../assets/icons/Things.png')
 const Hamburger = require('../../assets/icons/hamburger.png')
 const Notification = require('../../assets/icons/notification.png')
 const Favorite = require('../../assets/icons/favorite.png')
+const ArrowLeft = require('../../assets/icons/left.png')
 
 export default {
     Home,
@@ -13,5 +14,6 @@ export default {
     Things,
     Hamburger,
     Notification,
-    Favorite
+    Favorite,
+    ArrowLeft
 }

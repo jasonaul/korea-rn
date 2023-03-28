@@ -1,21 +1,31 @@
+import { useNavigation } from "@react-navigation/native";
 import React from "react";
 import { View, Image, StyleSheet, Text, TouchableOpacity } from "react-native";
 import { colors, shadow, sizes, spacing } from "../src/constants/theme";
 import FavoriteButton from "./FavoriteButton";
+import { SharedElement } from "react-navigation-shared-element"
 
 const CARD_WIDTH = 160;
 const CARD_HEIGHT = 220;
 
 const TopAttractions = ({list}) => {
+    const navigation = useNavigation()
     return (
       <View style={styles.container}>
         {list.map((item, index) => {
           return (
-            <TouchableOpacity style={styles.cardContainer}>
+            <TouchableOpacity 
+            style={styles.cardContainer} 
+            key={item.id} 
+            onPress={() => {
+                navigation.navigate('DetailsScreen', {trip: item})
+            }}>
               <View style={[styles.card, shadow.light]} key={item.id}>
+                <SharedElement id={`trip.${item.id}.image`}>
                 <View style={styles.imageBox}>
                   <Image style={styles.image} source={item.image} />
                 </View>
+                </SharedElement>
                 <View style={styles.footer}>
                   <View style={styles.titleBox}>
                     <Text style={styles.title}>{item.title}</Text>
