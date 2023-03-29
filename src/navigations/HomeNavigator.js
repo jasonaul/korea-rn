@@ -11,6 +11,7 @@ const HomeNavigator = () => {
             options={{
                 headerShow: false,
                 useNativeDriver: true,
+                gestureEnabled: false,
             }}
         />
         </Stack.Navigator>

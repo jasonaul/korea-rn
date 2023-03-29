@@ -7,11 +7,13 @@ import { useNavigation } from "@react-navigation/native";
 import { SharedElement } from "react-navigation-shared-element"
 import DetailsCard from "../../components/DetailsCard";
 import * as Animatable from 'react-native-animatable';
+import DetailsCarousel from "../../components/DetailsCarousel";
 
 
 const DetailsScreen = ({navigation, route}) => {
     const insets = useSafeAreaInsets()
     const {trip} = route.params;
+    const slides = [trip.image, ...trip.gallery]
     return (
         <View style={styles.container}>
             <Animatable.View 
@@ -28,6 +30,8 @@ const DetailsScreen = ({navigation, route}) => {
                 />
             </Animatable.View>
 
+        <DetailsCarousel slides={slides} id={trip.id} />
+
         <SharedElement 
             id={`trip.${trip.id}.image`} 
             style={StyleSheet.absoluteFillObject}>
@@ -39,6 +43,7 @@ const DetailsScreen = ({navigation, route}) => {
                 
             </View>
             </SharedElement>
+            
             <DetailsCard trip={trip}/>
         </View>
         
@@ -47,9 +52,11 @@ const DetailsScreen = ({navigation, route}) => {
 
 DetailsScreen.sharedElements = route => {
     const {trip} = route.params;
-    return [{
-        id: `trip.${trip.id}.image`
-    }]
+  return [
+    {
+      id: `trip.${trip.id}.image`,
+    },
+  ];
 }
 
 

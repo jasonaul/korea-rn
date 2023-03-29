@@ -17,12 +17,14 @@ const MainNavigator = () => {
             options={{
                 headerShown: false,
                 useNativeDriver: true,
+                gestureEnabled: false
             }}/>
             <Stack.Screen name="DetailsScreen" 
                 component={DetailsScreen} 
                 options={{
                 headerShown: false,
                 useNativeDriver: true,
+                gestureEnabled: false,
                 cardStyleInterpolator: ({current: {progress}}) => ({
               cardStyle: {
                 opacity: progress,

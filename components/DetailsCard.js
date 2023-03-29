@@ -37,8 +37,8 @@ const styles = StyleSheet.create({
     },
     title: {
         position: 'absolute',
-        bottom: -475,
-        left: 10,
+        bottom: 75,
+        left: 15,
         fontSize: sizes.title,
         fontWeight: 'bold',
         color: colors.white,
@@ -47,8 +47,8 @@ const styles = StyleSheet.create({
     },
     location: {
         position: 'absolute',
-        bottom: -520,
-        left: 10,
+        bottom: 20,
+        left: 15,
         fontSize: sizes.title,
         color: colors.white,
         textShadowColor: 'black',
