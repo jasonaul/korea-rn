@@ -9,12 +9,67 @@ const ItineraryScreen = () => {
       // alignItems: 'center', 
       // justifyContent: 'center' 
       }}>
-      <Text>Header?</Text>
+      <Text style={styles.rowCenter} >Tour Name: Friends of Korea</Text>
       <View style={styles.table}>
+          <View style={[styles.row, styles.rowBlue]}>
+            <View style={styles.cell}><Text style={styles.bold}>Date</Text></View>
+            <View style={styles.cell}><Text style={styles.bold}>City</Text></View>
+            <View style={styles.cell}><Text><Text style={styles.bold}>Top Attractions </Text>{"\n"}</Text></View>
+          </View>
+          <View style={[styles.row, styles.rowWhite]}>
+            <View style={styles.cell}><Text>April 9</Text></View>
+            <View style={styles.cell}><Text>Seoul</Text></View>
+            <View style={styles.cell}><Text><Text>Arrival </Text></Text></View>
+          </View>
           <View style={[styles.row, styles.rowBlue]}>
             <View style={styles.cell}><Text>Date</Text></View>
             <View style={styles.cell}><Text>City</Text></View>
-            <View style={styles.cell}><Text><Text style={styles.bold}>Top Attractions </Text>{"\n"}Line Break Test {"\n"} Another Line Break</Text></View>
+            <View style={styles.cell}><Text><Text style={styles.bold}>Top Attractions </Text>{"\n"}Column Reserved {"\n"}</Text></View>
+          </View>
+          <View style={[styles.row, styles.rowWhite]}>
+            <View style={styles.cell}><Text>April 9</Text></View>
+            <View style={styles.cell}><Text>Seoul</Text></View>
+            <View style={styles.cell}><Text><Text style={styles.bold}>Arrival </Text></Text></View>
+          </View>
+          <View style={[styles.row, styles.rowBlue]}>
+            <View style={styles.cell}><Text>April 10</Text></View>
+            <View style={styles.cell}><Text>City</Text></View>
+            <View style={styles.cell}><Text><Text style={styles.bold}>Top Attractions </Text>{"\n"}Column Reserved {"\n"}</Text></View>
+          </View>
+          <View style={[styles.row, styles.rowWhite]}>
+            <View style={styles.cell}><Text>April 12</Text></View>
+            <View style={styles.cell}><Text>Seoul</Text></View>
+            <View style={styles.cell}><Text><Text style={styles.bold}>Arrival </Text></Text></View>
+          </View>
+          <View style={[styles.row, styles.rowBlue]}>
+            <View style={styles.cell}><Text>April 13</Text></View>
+            <View style={styles.cell}><Text>City</Text></View>
+            <View style={styles.cell}><Text><Text style={styles.bold}>Top Attractions </Text>{"\n"}Column Reserved {"\n"}</Text></View>
+          </View>
+          <View style={[styles.row, styles.rowWhite]}>
+            <View style={styles.cell}><Text>April 14</Text></View>
+            <View style={styles.cell}><Text>Seoul</Text></View>
+            <View style={styles.cell}><Text><Text style={styles.bold}>Arrival </Text></Text></View>
+          </View>
+          <View style={[styles.row, styles.rowBlue]}>
+            <View style={styles.cell}><Text>April 15</Text></View>
+            <View style={styles.cell}><Text>City</Text></View>
+            <View style={styles.cell}><Text><Text style={styles.bold}>Top Attractions </Text>{"\n"}Column Reserved {"\n"}</Text></View>
+          </View>
+          <View style={[styles.row, styles.rowWhite]}>
+            <View style={styles.cell}><Text>April 16</Text></View>
+            <View style={styles.cell}><Text>Seoul</Text></View>
+            <View style={styles.cell}><Text><Text style={styles.bold}>Arrival </Text></Text></View>
+          </View>
+          <View style={[styles.row, styles.rowBlue]}>
+            <View style={styles.cell}><Text>April 17</Text></View>
+            <View style={styles.cell}><Text>City</Text></View>
+            <View style={styles.cell}><Text><Text style={styles.bold}>Top Attractions </Text>{"\n"}Column Reserved {"\n"}</Text></View>
+          </View>
+          <View style={[styles.row, styles.rowWhite]}>
+            <View style={styles.cell}><Text>April 18</Text></View>
+            <View style={styles.cell}><Text>Seoul</Text></View>
+            <View style={styles.cell}><Text><Text style={styles.bold}>Arrival </Text></Text></View>
           </View>
       </View>
     </View>
@@ -30,7 +85,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   rowBlue: {
-    backgroundColor: 'blue',
+    backgroundColor: '#52ffff',
   },
   rowWhite: {
     backgroundColor: 'white',
@@ -44,6 +99,10 @@ const styles = StyleSheet.create({
   },
   bold: {
     fontWeight: 'bold'
+  },
+  rowCenter: {
+    textAlign: 'center',
+    fontWeight: 'bold',
   }
 })
 

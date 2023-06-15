@@ -2,6 +2,9 @@ import React from "react";
 import { View, StyleSheet, Text } from "react-native";
 import { colors, sizes, spacing } from "../src/constants/theme";
 import * as Animatable from 'react-native-animatable'
+import BottomSheet from "@gorhom/bottom-sheet/src";
+
+
 
 const DetailsCard = ({trip}) => {
     return (
